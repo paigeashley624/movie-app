@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     get "/Actors" => "actors#id"
   end
+  namespace :api do
+    get "/Movies" => "movies#new"
+  end
 end

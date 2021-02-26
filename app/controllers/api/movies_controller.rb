@@ -3,4 +3,9 @@ class Api::MoviesController < ApplicationController
     @actor = Actor.(id_number)
     render "id.json.jb"
   end
+
+  def Movies
+    @movies = Movies
+    render "Movies.json.jb"
+  end
 end
