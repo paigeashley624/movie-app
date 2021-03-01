@@ -1,7 +1,7 @@
 class Api::MoviesController < ApplicationController
-  # def id(id_number)
-  #   @actor = Actor.(id_number)
-  #   render "id.json.jb"
-  # end
-
+  def sort_movies
+    @movies = Movies.all
+    @movie_sort = Movies.[id]
+    render "sort_movies.json.jb"
+  end
 end

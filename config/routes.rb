@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   #   get "/Actors" => "actors#id"
   # end
   namespace :api do
-    get "/Movies" => "movies#new_movies"
+    get "/New_Movies", controller: "movies", action: sort_movies"
   end
 end
